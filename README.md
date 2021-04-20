@@ -2,6 +2,10 @@ README
 
 This folder contains the source code for Yannix's Rolling Shutter Nuke Plugin.
 
+### Dependency
+- g++-4.8
+- Nuke (https://www.foundry.com/products/nuke)
+
 ### Build Step
 1. Modified NUKE_INSTALLED_PATH in Makefile.
 2. make  
