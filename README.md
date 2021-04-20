@@ -1,8 +1,15 @@
 README
 
-This folder contains the source code for Yannix's Rolling Shutter Nuke Plugin. Run the makefile for your Nuke platform.
+This folder contains the source code for Yannix's Rolling Shutter Nuke Plugin.
 
-The compilation step creates binary files, YnxRollingShutterNode.so and libynxlensdistortionengines.so . Copy these two files to your Nuke plugin folder.
+### Build Step
+1. Modified NUKE_INSTALLED_PATH in Makefile.
+2. make  
+
+### How to use
+1. Export LD_LIBRARY_PATH to your builded directory.
+2. Copy YnxRollingShutterNode.so to ~/.nuke, or somewhere in your NUKE_PATH.
+3. Create menu, you can see file ynxrollingshutternode.py and add to your menu.py.
 
 This folder also contains a sample test folder containing a Nuke file that utilizes this plugin. 
 If the plugin was successfully compiled and installed, the Nuke script should open without any errors. The Nuke script has a checkerboard node (#1) 

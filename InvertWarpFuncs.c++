@@ -169,9 +169,9 @@ Vector2 InvertWarpFuncs::removeWarp( const RollingShutterLensDistortionEngine &l
 		Vector2 improvedUnwarpedQ,
 				improvedWarpedUnwarpedQ,
 				improvedErrorV;
-		double improvedSqrError = HUGE;
+		double improvedSqrError = HUGE_VAL;
 		double stepScalar = 1;
-		assert( sqrError < HUGE );
+		assert( sqrError < HUGE_VAL );
 //cout << "starting[" << iterCount << "]..." << endl;
 //		while( improvedSqrError >= sqrError )
 		for( ; ; )
