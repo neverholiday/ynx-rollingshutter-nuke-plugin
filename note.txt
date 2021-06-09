@@ -1,0 +1,8 @@
+**NEED MERGED**
+- Build order of "all" in Makefile is wrong, It should be libynxlensdistortionengines.so YnxRollingShutterNode.so.
+- Change HUGE to HUGE_VAL because of cmath library changed.
+
+**OPTIONAL**
+These change are optional, you can revert back or merge for patching. Mostly it's minor change to make it simplify.
+- Add NUKE_INSTALLED_PATH to Makefile for easily modification of nuke path.
+- Revise Readme.md because  I added variable. and it should export LD_LIBRARY_PATH to point directory that libynxlensdistortionengines.so is stored. 
